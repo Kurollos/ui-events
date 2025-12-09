@@ -234,3 +234,11 @@ a[href="#interface"] {
   transition: transform 0.3s ease; /* vloeiende animatie */
   font-size: 1em; /* startgrootte */
 }
+
+/* Events */
+a[href="#events"] {
+  text-decoration: none;
+  display: inline-block; /* nodig voor transform/typografie effecten */
+  transition: font-size 0.2s ease; /* vloeiende animatie */
+  font-size: 16px; /* startgrootte */
+}

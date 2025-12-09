@@ -188,3 +188,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+/* Events */
+document.addEventListener('DOMContentLoaded', () => {
+    let eventsLink = document.querySelector('a[href="#events"]');
+    if (!eventsLink) return;
+
+    let fontSize = 16; // startgrootte in pixels
+    eventsLink.style.fontSize = fontSize + "px";
+
+    eventsLink.addEventListener('wheel', (event) => {
+        event.preventDefault(); // voorkomt dat de pagina scrollt
+
+        if (event.deltaY < 0) {
+            // scroll omhoog → groter
+            fontSize += 2;
+        } else {
+            // scroll omlaag → kleiner
+            fontSize -= 2;
+            if (fontSize < 8) fontSize = 8; // minimum grootte
+        }
+
+        eventsLink.style.fontSize = fontSize + "px";
+    });
+});
