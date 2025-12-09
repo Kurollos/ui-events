@@ -202,3 +202,17 @@ a[href="#the"] {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* Flow */
+a[href="#flow"] {
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-block; /* nodig voor transform/flip */
+  transition: transform 0.3s ease; /* maakt flip vloeiender */
+}
+
+/* Flip animatie */
+.flip {
+  transform: scaleX(-1);
+}

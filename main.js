@@ -128,5 +128,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/* Flow */
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecteer de link
+    let flowLink = document.querySelector('a[href="#flow"]');
+
+    if (!flowLink) return; // check dat het element bestaat
+
+    // Mousedown → flip
+    flowLink.addEventListener('mousedown', () => {
+        flowLink.classList.add('flip');
+    });
+
+    // Mouseup → flip terug
+    flowLink.addEventListener('mouseup', () => {
+        flowLink.classList.remove('flip');
+    });
+});
 
 
