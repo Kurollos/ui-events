@@ -43,3 +43,12 @@ scaleLink.addEventListener('click',function(){
   scaleLink.classList.toggle('slide-in')
   console.log()
 })
+
+/* #and */
+
+let translateLink = document.querySelector('a[href="#and"]')
+
+translateLink.addEventListener('click',function(){
+  translateLink.classList.toggle('moved')
+  console.log(translateLink)
+})

@@ -104,3 +104,21 @@ a[href="#design"] {
     scale:  2;
   }
 }
+
+/* #and */
+ a[href="#and"] {
+ 
+}
+
+
+div {
+  width: 10px;
+  height: 20px;
+
+
+}
+
+
+.moved {
+  transform: translate(10px, 30px);
+}
