@@ -171,5 +171,16 @@ a[href="#sprint-5"]:focus {
 }
 
 
+/* #fix */
+a[href="#fix"] {
+  text-decoration: none;   /* verwijdert onderstreping */
+  font-weight: normal;      /* standaard lettergewicht */
+  cursor: pointer;          /* laat zien dat het klikbaar is */
+  transition: all 0.2s ease; /* optioneel voor vloeiende hover */
+}
 
-
+/* Hover-effect zonder kleuren te veranderen */
+a[href="#fix"]:hover {
+  font-weight: bold;        /* bijvoorbeeld lettergewicht verandert */
+  text-decoration: underline; /* optioneel, laat hover zien */
+}

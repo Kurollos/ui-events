@@ -92,6 +92,17 @@ sprint5Link.addEventListener('mousedown', () => sprint5Link.classList.add('flip'
 // Mouseup → terug
 sprint5Link.addEventListener('mouseup', () => sprint5Link.classList.remove('flip'));
 
+/* #fix */
+let fixLink = document.querySelector('a[href="#fix"]');
+let originalText = fixLink.textContent;
+
+fixLink.addEventListener('mouseover', () => {
+    fixLink.textContent = "Muis over Fix!";
+});
+
+fixLink.addEventListener('mouseout', () => {
+    fixLink.textContent = originalText;
+});
 
 
 
