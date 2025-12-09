@@ -122,3 +122,23 @@ div {
 .moved {
   transform: translate(10px, 30px);
 }
+
+/* #Development*/
+ a[href="#development"] {
+ 
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+.shake {
+  animation: shake 0.5s;
+}

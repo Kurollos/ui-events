@@ -52,3 +52,17 @@ translateLink.addEventListener('click',function(){
   translateLink.classList.toggle('moved')
   console.log(translateLink)
 })
+
+/* #development */
+
+let animationLink = document.querySelector('a[href="#development"]')
+
+animationLink.addEventListener('dblclick', function(){
+
+animationLink.classList.add('shake');
+
+
+ setTimeout(() => {
+        animationLink.classList.remove('shake');
+    }, 500);
+});
