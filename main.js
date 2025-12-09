@@ -172,3 +172,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    let interfaceLink = document.querySelector('a[href="#interface"]');
+    if (!interfaceLink) return;
+
+    // keydown → blaas op
+    document.addEventListener('keydown', () => {
+        interfaceLink.style.transform = 'scale(1.5)'; // 1.5x groter
+    });
+
+    // keyup → laat leeglopen
+    document.addEventListener('keyup', () => {
+        interfaceLink.style.transform = 'scale(1)'; // terug naar normaal
+    });
+});
+

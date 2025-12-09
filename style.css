@@ -225,3 +225,12 @@ a[href="#user"] {
   display: inline-block;
   transition: color 0.3s ease; /* vloeiende kleurverandering */
 }
+
+
+/* Interface */
+a[href="#interface"] {
+  text-decoration: none;
+  display: inline-block; /* nodig voor transform */
+  transition: transform 0.3s ease; /* vloeiende animatie */
+  font-size: 1em; /* startgrootte */
+}
