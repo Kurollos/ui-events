@@ -242,3 +242,16 @@ a[href="#events"] {
   transition: font-size 0.2s ease; /* vloeiende animatie */
   font-size: 16px; /* startgrootte */
 }
+
+/* Interaction */
+a[href="#interaction"] {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: #333; /* basis achtergrond */
+  border-radius: 8px;
+  transition: background 0.1s;
+  position: relative;
+  overflow: hidden; /* zodat gradient binnen de link blijft */
+}

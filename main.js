@@ -212,3 +212,23 @@ document.addEventListener('DOMContentLoaded', () => {
         eventsLink.style.fontSize = fontSize + "px";
     });
 });
+
+
+/* Interaction */
+document.addEventListener('DOMContentLoaded', () => {
+    const interactionLink = document.querySelector('a[href="#interaction"]');
+    if (!interactionLink) return;
+
+    interactionLink.addEventListener('mousemove', (e) => {
+        const rect = interactionLink.getBoundingClientRect();
+        const x = e.clientX - rect.left; // muispositie binnen de link
+        const y = e.clientY - rect.top;
+
+        interactionLink.style.background = `radial-gradient(circle at ${x}px ${y}px, #ff0, #333)`;
+    });
+
+    // optioneel: reset naar normale achtergrond als de muis de link verlaat
+    interactionLink.addEventListener('mouseleave', () => {
+        interactionLink.style.background = '#333';
+    });
+});
