@@ -33,3 +33,13 @@ designLink.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // scaleLink.classList.toggle...
+
+/* Frontend */
+let scaleLink = document.querySelector('a[href="#frontend"]')
+console.log(scaleLink)
+
+
+scaleLink.addEventListener('click',function(){
+  scaleLink.classList.toggle('slide-in')
+  console.log()
+})

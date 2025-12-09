@@ -84,3 +84,23 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
+
+/* Frontend */
+ a[href="#frontend"] {
+ 
+}
+.slide-in{
+  animation-duration: 5s;
+  animation-name: slide-in;
+}
+@keyframes slide-in {
+   0% {
+    scale:  1;
+  }
+
+
+   100% {
+   
+    scale:  2;
+  }
+}
