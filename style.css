@@ -142,3 +142,34 @@ div {
 .shake {
   animation: shake 0.5s;
 }
+
+/* #Sprint 5 */
+
+a[href="#sprint-5"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+/* Focus → kleuren animatie */
+a[href="#sprint-5"]:focus {
+  animation: focusColors 1s infinite alternate;
+}
+
+
+@keyframes focusColors {
+  0% { background-color: #3498db; }
+  50% { background-color: #e74c3c; }
+  100% { background-color: #2ecc71; }
+}
+
+
+
+

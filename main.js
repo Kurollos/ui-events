@@ -66,3 +66,34 @@ animationLink.classList.add('shake');
         animationLink.classList.remove('shake');
     }, 500);
 });
+
+/* #Sprint 5 */
+
+// 1. Zoek het element
+let sprint5Link = document.querySelector('a[href="#sprint-5"]');
+
+
+// 2. Mouseover → tekst veranderen
+sprint5Link.addEventListener('mouseover', () => {
+    sprint5Link.textContent = "Muis over #sprint-5!";
+});
+
+
+// 3. Mouseout → rotate animatie
+sprint5Link.addEventListener('mouseout', () => {
+    sprint5Link.classList.add('rotate');
+    setTimeout(() => sprint5Link.classList.remove('rotate'), 500);
+    sprint5Link.textContent = "#Sprint-5"; // terugzetten originele tekst
+});
+
+
+// 4. Mousedown → flip
+sprint5Link.addEventListener('mousedown', () => sprint5Link.classList.add('flip'));
+// Mouseup → terug
+sprint5Link.addEventListener('mouseup', () => sprint5Link.classList.remove('flip'));
+
+
+
+
+
+
