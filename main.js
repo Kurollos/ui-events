@@ -104,6 +104,28 @@ fixLink.addEventListener('mouseout', () => {
     fixLink.textContent = originalText;
 });
 
+/* #The */
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecteer de link
+    let theLink = document.querySelector('a[href="#the"]');
+
+    if (!theLink) return; // check dat het element bestaat
+
+    // Sla de originele tekst op
+    let originalText = theLink.textContent;
+
+    // Mouseover → tekst veranderen
+    theLink.addEventListener('mouseover', () => {
+        theLink.textContent = "Muis over The!";
+    });
+
+    // Mouseout → tekst terug + rotate animatie
+    theLink.addEventListener('mouseout', () => {
+        theLink.textContent = originalText;
+        theLink.classList.add('rotate');
+        setTimeout(() => theLink.classList.remove('rotate'), 500);
+    });
+});
 
 
 
