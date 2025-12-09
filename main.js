@@ -146,4 +146,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/* User */
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecteer de link via href
+    let userLink = document.querySelector('a[href="#user"]');
+    if (!userLink) return;
+
+    // Luister naar keyup events op het document
+    document.addEventListener('keyup', (event) => {
+        const key = event.key.toLowerCase();
+
+        switch(key) {
+            case 'a':
+                userLink.style.color = 'red';
+                break;
+            case 'b':
+                userLink.style.color = 'blue';
+                break;
+            case 'c':
+                userLink.style.color = 'green';
+                break;
+            default:
+                userLink.style.color = 'black';
+        }
+    });
+});
 

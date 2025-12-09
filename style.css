@@ -216,3 +216,12 @@ a[href="#flow"] {
 .flip {
   transform: scaleX(-1);
 }
+
+
+/* User */
+a[href="#user"] {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: color 0.3s ease; /* vloeiende kleurverandering */
+}
